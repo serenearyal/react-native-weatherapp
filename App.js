@@ -1,45 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import CurrentWeather from './src/components/CurrentWeather';
 import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import UpcomingWeather from './src/components/UpcomingWeather';
 
-export default function App() {
+const App = () => {
   return (
-    <SafeAreaView style={styles.wrapper}>
-      <View style={styles.container}>
-        <Text>Current Weather</Text>
-        <Text style={styles.temp}>6</Text>
-        <Text style={styles.feels}>Feels like 5</Text>
-        <View style={styles.highLowWraper}>
-          <Text style={styles.highLow}>High: 8</Text>
-          <Text style={styles.highLow}>Low: 6</Text>
-        </View>
-      </View>
-    </SafeAreaView>
+    <View style={styles.container}>
+      <UpcomingWeather />
+    </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  wrapper: {
-    flex: 1,
-  },
   container: {
     flex: 1,
-    backgroundColor: 'pink',
-    alignItems: 'center',
-  },
-  temp: {
-    color: 'black',
-    fontSize: 48,
-  },
-  feels: {
-    fontSize: 30,
-    color: 'black',
-  },
-  highLow: {
-    fontSize: 24,
-    color: 'black',
-  },
-  highLowWraper: {
-    flexDirection: 'row',
   },
 });
+
+export default App;
