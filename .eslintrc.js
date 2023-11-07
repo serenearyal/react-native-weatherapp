@@ -22,7 +22,7 @@ module.exports = {
   plugins: ['react'],
   rules: {
     // allow .js files to contain JSX code
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
 
     // prevent eslint to complain about the "styles" variable being used before it was defined
     'no-use-before-define': ['error', { variables: false }],
