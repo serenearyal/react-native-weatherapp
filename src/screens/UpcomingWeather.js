@@ -7,7 +7,7 @@ import ListItem from '../components/ListItem';
 const UpcomingWeather = ({ weatherData }) => {
   const renderItem = ({ item }) => (
     <ListItem
-      dt={item.dt}
+      dt_txt={item.dt_txt}
       min={item.main.temp_min}
       max={item.main.temp_max}
       condition={item.weather[0].main}

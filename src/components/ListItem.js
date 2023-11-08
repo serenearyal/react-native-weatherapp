@@ -5,13 +5,16 @@ import { weatherType } from '../utilities/weatherType';
 import moment from 'moment';
 
 const ListItem = (props) => {
-  const { dt, min, max, condition } = props;
+  const { dt_txt, min, max, condition } = props;
   const { item, date, temp } = styles;
 
   return (
     <View style={item}>
       <Feather name={weatherType[condition].icon} size={24} color={'orange'} />
-      <Text style={date}>{moment(dt).format('h:mm:ss a')}</Text>
+      <View style={{ flexDirection: 'column' }}>
+        <Text style={date}>{moment(dt_txt).format('dddd')}</Text>
+        <Text style={date}>{moment(dt_txt).format('h:mm a')}</Text>
+      </View>
       <Text style={temp}>{`${Math.round(min)}°/ ${Math.round(max)}°`}</Text>
     </View>
   );
