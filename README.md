@@ -1,5 +1,5 @@
 ## Preview on IOS
-![Screenshot 2024-02-20 at 5 18 15 PM](https://github.com/serenearyal/react-native-weatherapp/assets/84435603/b15801eb-c152-4101-84ba-c9b86d4baa73)
+![iphoneapp](https://github.com/serenearyal/react-native-weatherapp/assets/84435603/637e4844-6314-467b-8106-b76103da6067)
 ---
 ## Features
 * Cross Platform app made using React Native.
